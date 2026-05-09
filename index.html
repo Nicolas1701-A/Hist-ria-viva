@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História Viva</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏛 História Viva</h1>
+
+    <button id="abrirChat">
+      Chatbot IA
+    </button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>
+        Explore os momentos que moldaram o mundo
+      </h2>
+
+      <p>
+        Descubra eventos históricos e converse com uma IA especializada em história.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <section>
+      <h3>Eventos Importantes</h3>
+
+      <div id="eventos" class="grid"></div>
+    </section>
+
+    <section>
+      <h3>Pessoas Importantes</h3>
+
+      <div id="pessoas" class="grid"></div>
+    </section>
+
+  </main>
+
+  <!-- CHAT -->
+
+  <div class="chat hidden" id="chat">
+
+    <div class="chat-topo">
+      <h3>Assistente de História</h3>
+
+      <button id="fecharChat">X</button>
+    </div>
+
+    <div id="mensagens" class="mensagens"></div>
+
+    <div class="api-box">
+      <input
+        type="password"
+        id="apiKey"
+        placeholder="Cole sua chave da API OpenAI"
+      >
+
+      <button id="salvarKey">
+        Salvar
+      </button>
+    </div>
+
+    <div class="chat-input">
+
+      <input
+        type="text"
+        id="pergunta"
+        placeholder="Pergunte algo..."
+      >
+
+      <button id="enviar">
+        →
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="data/historia.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
